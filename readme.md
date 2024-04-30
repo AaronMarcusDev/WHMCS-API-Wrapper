@@ -10,7 +10,7 @@ Short explanations are provided in the folders and files. To use the wrapper, yo
 
 Import het bestand 'src/wrapper.php' om alle functies te importeren en te kunnen gebruiken.
 
-## Vereist
+## Vereist / Required
 - WHCMS API Url
 - WHCMS API Username
 - WHCMS API Password
