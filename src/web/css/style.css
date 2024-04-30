@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-bottom: 4px solid darkslategrey;
+}
+
+nav h1 {
+    font-weight: Bold;
+    color: white;
+}
+
+div#mainWindow {
+    padding-top: 10px;
+    /* or margin-top: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body ul li {
+    font-weight: bold;
+}
+
+body ul li a {
+    text-decoration: none !important;
+    color: rgb(65, 157, 187);
+}
+
+body ul li a:hover {
+    color: rgb(92, 84, 197);
+}
