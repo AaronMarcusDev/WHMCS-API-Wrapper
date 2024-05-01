@@ -17,9 +17,10 @@ require 'lib/getClients.php';
 require 'lib/domainWhoIs.php';
 require 'lib/dnsCheck.php';
 
-testApi('https://catfact.ninja/fact');
-echo "The JSON response:\n";
-echo json_encode(json_decode(testApiWithResponse('https://catfact.ninja/fact')), JSON_PRETTY_PRINT);
+// testApi('https://catfact.ninja/fact');
+// echo "The JSON response:\n";
+// echo json_encode(json_decode(testApiWithResponse('https://catfact.ninja/fact')), JSON_PRETTY_PRINT);
 
-// Elk bestand heeft een functie die geroepen kan worden; zelfde naam als de bestanden
-// ze returnen allemaal een JSON format die je kan inspecteren
+
+//! Elk bestand heeft een functie die geroepen kan worden; zelfde naam als de bestanden
+//! ze returnen allemaal een JSON format die je kan inspecteren
