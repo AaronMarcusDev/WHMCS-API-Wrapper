@@ -52,13 +52,13 @@ $apiPassword = 'password';
 $apiMethod = 'GetOrders';
 $ID = 123; // Example
 
-$responseData = getOrders($apiUrl, $apiUsername, $apiPassword, $apiMethod, $ID);
+// $responseData = getOrders($apiUrl, $apiUsername, $apiPassword, $apiMethod, $ID);
 
 // $responseData = json_decode($response, true);
 
-if ($responseData['result'] == 'success') {
-    // ... (handle response)
-} else {
-    echo 'Failed to obtain orders: ' . $responseData['message'];
-    // Display to customer / user
-}
+// if ($responseData['result'] == 'success') {
+//     // ... (handle response)
+// } else {
+//     echo 'Failed to obtain orders: ' . $responseData['message'];
+//     // Display to customer / user
+// }

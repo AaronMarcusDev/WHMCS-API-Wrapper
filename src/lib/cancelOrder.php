@@ -45,11 +45,11 @@ function cancelOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID) 
     return json_decode($response, true);
 }
 
-$responseData = cancelOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID);
+// $responseData = cancelOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID);
 
 // Voorbeeld
-if ($responseData['result'] == 'success') {
-    echo 'Order ' . $data['orderid'] . ' has been canceled.';
-} else {
-    echo 'Failed to cancel order: ' . $responseData['message'];
-}
+// if ($responseData['result'] == 'success') {
+//     echo 'Order ' . $data['orderid'] . ' has been canceled.';
+// } else {
+//     echo 'Failed to cancel order: ' . $responseData['message'];
+// }

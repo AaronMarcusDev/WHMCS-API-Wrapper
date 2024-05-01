@@ -33,9 +33,9 @@ function getClients($whmcsUrl, $apiUsername, $apiPassword) {
 }
 
 // Voorbeeld gebruik:
-$whmcsUrl = "https://www.yourdomain.com/path/to/whmcs/";
-$apiUsername = 'username';
-$apiPassword = 'password';
+// $whmcsUrl = "https://www.yourdomain.com/path/to/whmcs/";
+// $apiUsername = 'username';
+// $apiPassword = 'password';
 
-$responseData = getClients($whmcsUrl, $apiUsername, $apiPassword);
-echo $responseData;
+// $responseData = getClients($whmcsUrl, $apiUsername, $apiPassword);
+// echo $responseData;

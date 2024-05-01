@@ -1,4 +1,4 @@
-<?php require './dnsCheck.php';
+<?php
 
 $whoIsDomain = 'example.com';
 
@@ -29,4 +29,4 @@ function domainWhoIs($apiUrl, $apiUsername, $apiPassword, $apiMethod, $whoIsDoma
 // $apiMethod = 'DomainWhois';
 // $whoIsDomain = 'example.com'; // Example
 
-$responseData = domainWhoIs($apiUrl, $apiUsername, $apiPassword, $apiMethod, $whoIsDomain);
+// $responseData = domainWhoIs($apiUrl, $apiUsername, $apiPassword, $apiMethod, $whoIsDomain);

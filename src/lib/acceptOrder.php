@@ -49,11 +49,11 @@ function acceptOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $registrar
     return json_decode($response, true);
 }
 
-$responseData = acceptOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $registrar, $orderID);
+// $responseData = acceptOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $registrar, $orderID);
 
 // Voorbeeld
-if ($responseData['result'] == 'success') {
-    echo 'Order ' . $data['orderid'] . ' has been canceled.';
-} else {
-    echo 'Failed to cancel order: ' . $responseData['message'];
-}
+// if ($responseData['result'] == 'success') {
+//     echo 'Order ' . $data['orderid'] . ' has been canceled.';
+// } else {
+//     echo 'Failed to accept order: ' . $responseData['message'];
+// }

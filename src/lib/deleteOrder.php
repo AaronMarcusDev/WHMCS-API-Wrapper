@@ -56,11 +56,11 @@ $apiPassword = 'password';
 $apiMethod = 'DeleteOrder';
 $orderID = 123; // Example
 
-$responseData = deleteOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID);
+// $responseData = deleteOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID);
 
 // Voorbeeld
-if ($responseData['result'] == 'success') {
-    echo 'Order ' . $data['orderid'] . ' has been deleted.';
-} else {
-    echo 'Failed to delete order: ' . $responseData['message'];
-}
+// if ($responseData['result'] == 'success') {
+//     echo 'Order ' . $data['orderid'] . ' has been deleted.';
+// } else {
+//     echo 'Failed to delete order: ' . $responseData['message'];
+// }

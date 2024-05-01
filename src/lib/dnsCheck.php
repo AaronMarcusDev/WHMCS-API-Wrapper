@@ -43,13 +43,13 @@ function dnsCheck($apiUrl, $apiUsername, $apiPassword, $apiMethod, $domain) {
 }
 
 // Example usage:
-$apiUrl = 'https://your-whmcs-url.com/includes/api.php';
-$apiUsername = 'username';
-$apiPassword = 'password';
-$apiMethod = 'DNSCheck';
-$domain = 'example.com'; // Example
+// $apiUrl = 'https://your-whmcs-url.com/includes/api.php';
+// $apiUsername = 'username';
+// $apiPassword = 'password';
+// $apiMethod = 'DNSCheck';
+// $domain = 'example.com'; // Example
 
-$responseData = dnsCheck($apiUrl, $apiUsername, $apiPassword, $apiMethod, $domain);
+// $responseData = dnsCheck($apiUrl, $apiUsername, $apiPassword, $apiMethod, $domain);
 
 // Voorbeeld (oud)
 // if (curl_errno($ch)) {
@@ -70,4 +70,4 @@ $responseData = dnsCheck($apiUrl, $apiUsername, $apiPassword, $apiMethod, $domai
 // }
 
 // Close cURL session
-curl_close($ch);
+// curl_close($ch);
