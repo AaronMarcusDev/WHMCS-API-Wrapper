@@ -8,9 +8,9 @@ Short explanations are provided in the folders and files. To use the wrapper, yo
 
 ## Aan de slag / Get started
 
-Import het bestand 'src/wrapper.php' om alle functies te importeren en te kunnen gebruiken.
+**NL:** Import het bestand 'src/wrapper.php' om alle functies te importeren en te kunnen gebruiken.\
+**EN:** Import the file 'src/wrapper.php' to import all the functions of the wrapper.
 
 ## Vereist / Required
 - WHMCS API Url
-- WHMCS API Username
-- WHMCS API Password
+- WHMCS API Username & Password / config.php

@@ -3,7 +3,6 @@
 $apiUrl = "https://demo.whmcs.com/";
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'CancelOrder';
 $registrar = 'enom'; // voorbeeld
 $orderID = 123; // voorbeeld
 
@@ -24,9 +23,9 @@ $orderID = 123; // voorbeeld
 // $response = curl_exec($ch);
 // curl_close($ch);
 
-function cancelOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID) {
+function cancelOrder($apiUrl, $apiUsername, $apiPassword, $orderID) {
     $data = array(
-        'action' => $apiMethod,
+        'action' => 'CancelOrder',
         'username' => $apiUsername,
         'password' => $apiPassword,
         'orderid' => $orderID,

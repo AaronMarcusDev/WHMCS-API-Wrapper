@@ -3,7 +3,6 @@
 $apiUrl = 'https://your-whmcs-url.com/includes/api.php';
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'DeleteOrder';
 $registrar = 'enom'; // voorbeeld
 $orderID = 123; // voorbeeld
 
@@ -28,9 +27,9 @@ $orderID = 123; // voorbeeld
 
 // $responseData = json_decode($response, true);
 
-function deleteOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID) {
+function deleteOrder($apiUrl, $apiUsername, $apiPassword, $orderID) {
     $data = array(
-        'action' => $apiMethod,
+        'action' => 'DeleteOrder',
         'username' => $apiUsername,
         'password' => $apiPassword,
         'orderid' => $orderID,
@@ -53,7 +52,6 @@ function deleteOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID) 
 $apiUrl = 'https://your-whmcs-url.com/includes/api.php';
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'DeleteOrder';
 $orderID = 123; // Example
 
 // $responseData = deleteOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $orderID);

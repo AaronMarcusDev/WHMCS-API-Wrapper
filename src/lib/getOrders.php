@@ -3,7 +3,6 @@
 $apiUrl = 'https://whmcs-url.com/includes/api.php';
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'GetOrders';
 $registrar = 'enom'; // voorbeeld
 $ID = 123; // voorbeeld
 
@@ -25,9 +24,9 @@ $ID = 123; // voorbeeld
 // $response = curl_exec($ch);
 // curl_close($ch);
 
-function getOrders($apiUrl, $apiUsername, $apiPassword, $apiMethod, $ID) {
+function getOrders($apiUrl, $apiUsername, $apiPassword, $ID) {
     $data = array(
-        'action' => $apiMethod,
+        'action' => 'GetOrders',
         'username' => $apiUsername,
         'password' => $apiPassword,
         'id' => $ID,
@@ -49,7 +48,6 @@ function getOrders($apiUrl, $apiUsername, $apiPassword, $apiMethod, $ID) {
 $apiUrl = 'https://www.example.com/includes/api.php';
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'GetOrders';
 $ID = 123; // Example
 
 // $responseData = getOrders($apiUrl, $apiUsername, $apiPassword, $apiMethod, $ID);

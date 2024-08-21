@@ -2,9 +2,10 @@
 
 $whoIsDomain = 'example.com';
 
-function domainWhoIs($apiUrl, $apiUsername, $apiPassword, $apiMethod, $whoIsDomain) {
+function domainWhoIs($apiUrl, $apiUsername, $apiPassword, $whoIsDomain)
+{
     $data = array(
-        'action' => $apiMethod,
+        'action' => 'DomainWhois',
         'domain' => $whoIsDomain,
         'username' => $apiUsername,
         'password' => $apiPassword,
@@ -23,10 +24,15 @@ function domainWhoIs($apiUrl, $apiUsername, $apiPassword, $apiMethod, $whoIsDoma
 }
 
 // Voorbeeld gebruik:
-// $apiUrl = 'https://www.example.com/includes/api.php';
-// $apiUsername = 'FDEOmwCvqdWls8gdh8NONgIp4yn3Qgee';
-// $apiPassword = 'mYgWdAgSRNX44If4GXUmPEoEJUBDGlXO';
-// $apiMethod = 'DomainWhois';
-// $whoIsDomain = 'example.com'; // Example
+$apiUrl = 'https://www.example.com/includes/api.php';
+$apiUsername = $API_IDENTIFIER;
+$apiPassword = $API_SECRET;
+$whoIsDomain = 'example.com'; // Example
 
-// $responseData = domainWhoIs($apiUrl, $apiUsername, $apiPassword, $apiMethod, $whoIsDomain);
+$responseData = domainWhoIs($apiUrl, $apiUsername, $apiPassword, $whoIsDomain);
+if ($responseData) {
+    echo "Succes\n";
+} else {
+    echo "failed\n";
+}
+echo $responseData;

@@ -3,6 +3,9 @@
 // Tools
 require 'lib/testApi.php';
 
+// Config en API Data
+require 'lib/config.php';
+
 // Orders
 //require 'lib/addOrder.php'; // todo: add function for acceptOrder
 require 'lib/acceptOrder.php';

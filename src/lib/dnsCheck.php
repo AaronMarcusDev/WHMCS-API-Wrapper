@@ -3,7 +3,6 @@
 $apiUrl = 'https://your-whmcs-url.com/includes/api.php';
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'DomainWhois';
 
 $domain = 'example.com'; // voorbeeld
 
@@ -22,9 +21,9 @@ $domain = 'example.com'; // voorbeeld
 // curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
 // $response = curl_exec($ch);
 
-function dnsCheck($apiUrl, $apiUsername, $apiPassword, $apiMethod, $domain) {
+function dnsCheck($apiUrl, $apiUsername, $apiPassword, $domain) {
     $data = array(
-        'action' => $apiMethod,
+        'action' => 'DomainWhois',
         'domain' => $domain,
         'username' => $apiUsername,
         'password' => $apiPassword,

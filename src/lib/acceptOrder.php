@@ -3,7 +3,6 @@
 $apiUrl = 'https://your-whmcs-url.com/includes/api.php';
 $apiUsername = 'username';
 $apiPassword = 'password';
-$apiMethod = 'AcceptOrder';
 $registrar = 'enom'; // voorbeeld
 $orderID = 123; // voorbeeld
 
@@ -27,9 +26,9 @@ $orderID = 123; // voorbeeld
 // $response = curl_exec($ch);
 // curl_close($ch);
 
-function acceptOrder($apiUrl, $apiUsername, $apiPassword, $apiMethod, $registrar, $orderID) {
+function acceptOrder($apiUrl, $apiUsername, $apiPassword, $registrar, $orderID) {
     $data = array(
-        'action' => $apiMethod,
+        'action' => 'AcceptOrder',
         'username' => $apiUsername,
         'password' => $apiPassword,
         'orderid' => $orderID,
